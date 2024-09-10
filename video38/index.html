@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATIONS</title>
+    <style>
+        .container{
+            background-color: green;
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation: ayushkaanimation;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: cubic-bezier(0,0,0,0,96); */
+
+            animation: ayushkaanimation 1s ease-in-out 2s  3 1;
+            animation: ayush2 3s ease-in-out 3s 3;
+        }              
+        @keyframes ayushkaanimation {
+            from{
+               
+            }
+            to{
+           transform: translateX(1000px);
+            }
+        }
+        @keyframes ayush2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+        50%{
+            transform: rotate(220deg);
+        }
+        80%{
+            transform: rotate(300deg);
+        }
+        100%{
+            transform: rotate(310deg);
+        }
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

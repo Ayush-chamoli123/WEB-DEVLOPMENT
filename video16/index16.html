@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*ELEMENT SELECTOR*/
+        div{
+         background-color: aqua;
+        }
+        /*CLASS SELECTOR*/
+        .red{
+            background-color: yellow;
+        }
+        /*ID SELECTOR*/
+        #green {
+            background-color: rgb(114, 172, 114);
+        }
+        /*CHILD SELECTOR*/
+        div > p{
+            color: aqua;
+            background-color: antiquewhite;
+        }
+        /*DESCENDED SELECTOR*/
+        div p{
+            color: palevioletred;
+            background-color: rgb(54, 84, 84);
+        }
+        /*UNIVERSAL SELECTOR*/
+        *{
+            margin: 1;
+            padding: 1;
+        }
+        /*PSEUDO SELECTOR*/
+     a:visited{
+        color: rebeccapurple;
+     }
+     a:link{
+        color: brown;
+     }
+     a:active{
+        background-color: rgb(104, 46, 158);
+     }
+     a:hover{
+        background-color: red;
+     }
+p:first-child{
+    background-color: aquamarine;
+}
+    </style>
+</head>
+<body>
+    <div class="one">
+<p>I am First</p>
+<p>I am second</p>
+    </div>
+    <br>
+    <div class="red">
+        i am div 
+    </div>
+    <br>
+    <div id="green">hey this is html</div>
+    <br>
+
+    <div>i am parent
+        <P>I AM CHID INSIDE DIV</P>
+    </div>
+
+    <p><a target="_blank" href="https://www.google.com">Go to google</a></p>
+    <a href="https://www.youtube.com">Go to youtube</a>
+    
+    
+
+</body>
+</html>
